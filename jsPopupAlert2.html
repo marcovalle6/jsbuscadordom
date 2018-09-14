@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Caja de confirmacion</h2>
+
+
+<button onclick="myFunction()">Intentalo</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Presione un boton!")) {
+        txt = "Presionast OK!";
+    } else {
+        txt = "Has precionado cancelar!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

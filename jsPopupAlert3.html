@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>peticion de JavaScript</h2>
+
+<button onclick="myFunction()">Intentalo</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Porfavor introduzca su nombre:", "Marco Valle");
+    if (person == null || person == "") {
+        txt = "El usuario cancelo el aviso.";
+    } else {
+        txt = "Hola " + person + "! ¿Como esta hoy?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

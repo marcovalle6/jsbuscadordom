@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<h3>The window.location object</h3>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"The full URL of this page is:<br>" + window.location.href;
+</script>
+
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+
+<script>
+function goForward() {
+    window.history.forward()
+}
+</script>
+
+<input type="button" value="Back" onclick="goBack()">
+
+<input type="button" value="Forward" onclick="goForward()">
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Haga clic en "Pruébelo". Espere 3 segundos. La página alertará "Hola".</p>
+
+<p>Haga clic en "Parar" para evitar que se ejecute la primera función.</p>
+
+<p>(Debe hacer clic en "Detener" antes de que transcurran los 3 segundos).</p>
+
+<button onclick="myVar = setTimeout(myFunction, 3000)">Intentalo</button>
+
+<button onclick="clearTimeout(myVar)">¡Basta!</button>
+
+<script>
+function myFunction() {
+    alert("Hola");
+}
+</script>
+</body>
+</html>
